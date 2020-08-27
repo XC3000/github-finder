@@ -11,7 +11,9 @@ export class Search extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state.text);
+    /* console.log(this.state.text); */
+    this.props.searchUsers(this.state.text);
+    this.setState({ text: "" });
   };
 
   render() {
