@@ -1,15 +1,13 @@
 import React, { useReducer } from "react";
 import axios from "axios";
-import GithubContext from "./GithubContext";
-import GithubReducer from "./GithubReducer";
+import GithubContext from "./githubContext";
+import GithubReducer from "./githubReducer";
 import {
   SEARCH_USERS,
   GET_USER,
   CLEAR_USERS,
   GET_REPOS,
   SET_LOADING,
-  SET_ALERT,
-  REMOVE_ALERT,
 } from "../types";
 
 const GithubState = (props) => {
